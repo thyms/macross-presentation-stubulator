@@ -1,0 +1,21 @@
+!!! 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+    script(type='text/javascript', src='/javascripts/jquery-1.9.0.min.js')
+    script(type='text/javascript', src='/javascripts/bootstrap.js')
+  body
+    .navbar.navbar-inverse
+      .container
+        .navbar-header
+          a.navbar-brand(href='#') macross presentation-stubulator
+
+
+    .container
+      block content
+
+      hr
+      footer
+        p © 2012

@@ -1,0 +1,9 @@
+script: make test-app-ci
+deploy:
+  provider: heroku
+  api_key:
+    secure: g0l9+F/W8oxuwCpr2kVBVR3MP30UYAgTpmgfR+HpTY9mV5YGHjxcA5HEAtmCFnwjUkKyDBw4SxdevLIfp7MybxgIh+1Y7BMGDMWPrcVD3JKB2B/5cCaZXixIBAGuQaLAunIgX281nrlwcnvOvAdihgL7+ljrI+Lb4HmnPyLZ4jc=
+  app: macross-presentation-stub01
+  on:
+    repo: thyms/macross-presentation-stubulator
+    branch: develop
